@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m playwright install chromium)",
+      "Bash(python3 -m uvicorn main:app --port 8765 --reload)",
+      "Bash(curl -s http://localhost:8765/api/models)",
+      "Bash(curl -s http://localhost:8765/)",
+      "Bash(pkill -f \"uvicorn main:app\")",
+      "Bash(curl -s http://localhost:8765/api/session)"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Outreach Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-top">
+        <div>
+          <div class="wordmark">LinkedIn Outreach</div>
+          <p class="tagline">Get insights and personalized outreach in your voice.</p>
+        </div>
+        <div id="session-badge" class="session-badge" onclick="handleSessionClick()">
+          <span id="session-dot" class="session-dot"></span>
+          <span id="session-label">Checking…</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Input form -->
+    <section class="card form-card">
+      <div class="form-row">
+        <div class="field">
+          <label for="origin-url">Your LinkedIn profile</label>
+          <input id="origin-url" type="url"
+                 placeholder="https://linkedin.com/in/yourname" />
+        </div>
+        <div class="field">
+          <label for="dest-url">Their LinkedIn profile</label>
+          <input id="dest-url" type="url"
+                 placeholder="https://linkedin.com/in/theirname" />
+        </div>
+      </div>
+      <div class="form-footer">
+        <div class="field model-field">
+          <label for="model-select">Model</label>
+          <select id="model-select">
+            <option value="">Loading models…</option>
+          </select>
+        </div>
+        <button id="analyze-btn" onclick="startAnalysis()">
+          Analyze <span class="arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Status log -->
+    <section id="status-section" class="hidden">
+      <div id="status-log" class="status-log"></div>
+    </section>
+
+    <!-- Live stream area (shown while generating) -->
+    <section id="stream-section" class="hidden">
+      <div class="card stream-card">
+        <div class="stream-header">
+          <span class="stream-label">Generating analysis</span>
+          <span class="pulse-dot"></span>
+        </div>
+        <pre id="stream-output" class="stream-output"></pre>
+      </div>
+    </section>
+
+    <!-- Structured results (shown after generation) -->
+    <section id="results-section" class="hidden">
+
+      <div id="profiles-bar" class="profiles-bar"></div>
+
+      <div class="insights-grid">
+        <div class="card insight-card" id="card-tone">
+          <h3 class="card-label">Tone Analysis</h3>
+          <div class="card-body" id="tone-body"></div>
+        </div>
+        <div class="card insight-card" id="card-insights">
+          <h3 class="card-label">Target Insights</h3>
+          <div class="card-body" id="insights-body"></div>
+        </div>
+        <div class="card insight-card span-2" id="card-connections">
+          <h3 class="card-label">Connection Points</h3>
+          <div class="card-body" id="connections-body"></div>
+        </div>
+        <div class="card insight-card span-2" id="card-strategy">
+          <h3 class="card-label">Outreach Strategy</h3>
+          <div class="card-body" id="strategy-body"></div>
+        </div>
+      </div>
+
+      <div class="drafts-section">
+        <h2 class="drafts-heading">LinkedIn Drafts</h2>
+        <div id="linkedin-drafts" class="drafts-list"></div>
+      </div>
+
+      <div class="drafts-section">
+        <h2 class="drafts-heading">Email Drafts</h2>
+        <div id="email-drafts" class="drafts-list"></div>
+      </div>
+    <div class="text">
+      <p class="tagline">ade with ❤️ by <a href="https://www.linkedin.com/in/noashavit" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:underline">Noa Shavit
+     </div>
+      </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
