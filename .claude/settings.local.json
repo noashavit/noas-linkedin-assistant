@@ -15,7 +15,11 @@
       "Read(//private/tmp/claude-501/-Users-noashavit-Claude-Code-LI_Insights/815b9c8f-efb3-4c8a-af85-0f4d4c360cbe/tasks/**)",
       "Read(//private/tmp/claude-501/**)",
       "Bash(ls /Users/noashavit/Claude_Code/LI_Insights/*.png /Users/noashavit/Claude_Code/LI_Insights/*.jpg /Users/noashavit/Claude_Code/LI_Insights/*.jpeg /Users/noashavit/Claude_Code/LI_Insights/*.webp)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git rm *)",
+      "Bash(/Users/noashavit/Library/Python/3.9/bin/git-filter-repo --path session.json --invert-paths --force)",
+      "Bash(git remote *)",
+      "Bash(git push *)"
     ]
   }
 }

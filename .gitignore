@@ -1,0 +1,25 @@
+# LinkedIn session — contains live auth cookies, never commit
+session.json
+
+# macOS metadata
+.DS_Store
+
+# Claude Code local settings — contains personal file paths
+.claude/settings.local.json
+settings.local*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Playwright browser state
+playwright-state.json
+playwright/.auth/
+
+# Environment variables
+.env
+.env.*
