@@ -1,6 +1,6 @@
 <img width="160" height="160" alt="noas-icon" src="https://github.com/user-attachments/assets/e71f9c41-a674-4fed-8676-d6704529d2b4" />
 
-# LinkedIn Outreach Assistant
+# LinkedIn outreach assistant
 
 Scrapes two LinkedIn profiles and generates personalized outreach messages — connection notes and cold emails — written in the sender's authentic voice. Runs entirely on your machine using a local Ollama model. No cloud API calls, no data leaves your computer.
 
