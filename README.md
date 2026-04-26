@@ -14,6 +14,10 @@ Scrapes two LinkedIn profiles and generates personalized outreach messages — c
 4. Outputs a structured analysis: tone profile, destination insights, overlap, connection points, outreach strategy
 5. Generates 5 LinkedIn connection notes (≤300 chars) and 5 cold email drafts in the sender's voice
 
+See it in action below:
+
+https://github.com/user-attachments/assets/a58e3b8b-206a-4fb8-aa5f-84b9486ff4d6
+
 ---
 
 ## Requirements
