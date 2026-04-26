@@ -2,17 +2,17 @@
 
 # LinkedIn outreach assistant
 
-Scrapes two LinkedIn profiles and generates personalized outreach messages — connection notes and cold emails — written in the sender's authentic voice. Runs entirely on your machine using a local Ollama model. No cloud API calls, no data leaves your computer.
+This app scrapes two LinkedIn profiles to learn the sender's voice and the what is top of mind for the target. It then generates personalized LinkedIn connection notes and cold emails, written in the sender's voice. The app runs locally using the Ollama model of your preference. No cloud API calls, nothing leaves your computer.
 
 ---
 
 ## What it does
 
 1. Scrapes the sender's and recipient's LinkedIn profiles (bio, experience, activity feed)
-2. Detects shared employers, groups, and recent posts
-3. Passes the data to a local LLM (via Ollama)
+2. Detects shared employers, groups, and analyzes the recipient's recent posts to deduce what's top of mind for them and inform outreach.
+3. Passes the data to your preferred local LLM model (via Ollama)
 4. Outputs a structured analysis: tone profile, destination insights, overlap, connection points, outreach strategy
-5. Generates 5 LinkedIn connection notes (≤300 chars) and 5 cold email drafts in the sender's voice
+5. Generates 5 LinkedIn connection notes (≤300 chars) and 5 cold email drafts based on the sender's voice and what is top of mind for the recepient. These drafts act as a starting point for customized outreach. 
 
 See it in action below:
 
@@ -125,3 +125,7 @@ li-insights/
 - **Scraping:** Playwright (persistent browser session)
 - **LLM:** Ollama (local inference, any compatible model)
 - **Frontend:** Vanilla JS, no build step required
+
+## Built by
+
+[Noa Shavit](https://www.linkedin.com/in/noashavit), product marketer and AI builder based in San Francisco.
